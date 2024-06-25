@@ -1,0 +1,2 @@
+# securesync
+ Biometric Attendance System 
