@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300&display=swap');
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: #2F55B7;
+    color: white;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1E1E1E;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    padding-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar a {
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar a.active {
+    background-color: #2F55B7;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+}
+
+th.title {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+td {
+    font-weight: 100;
+}
+
+tr.separator {
+    border-top: 1px solid black;
+}
+
+.date {
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+    position: fixed;
+    left: 55%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    padding: 20px;
+}
+
+.button-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+.table-row.highlight {
+    background-color: #2F55B7;
+    color: white;
+}
+
+/* Overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark overlay */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+#editFormContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+#editEmployeeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#editEmployeeForm input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#editEmployeeForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#editEmployeeForm button[type="submit"] {
+    background-color: #007bff;
+}
+
+#editEmployeeForm button[type="button"] {
+    background-color: #FF5252;
+}
+
+#formContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+#employeeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#employeeForm input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#employeeForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#employeeForm button[type="submit"] {
+    background-color: #007bff;
+}
+
+#employeeForm button[type="button"] {
+    background-color: #FF5252;
+}
+
+/* CSS for receipt */
+.receipt {
+    border: 2px solid #000;
+    padding: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.receipt p {
+    margin: 5px 0;
+}
